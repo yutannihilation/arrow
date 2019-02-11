@@ -2,7 +2,8 @@ VERSION=0.11.1
 RWINLIB=../windows/arrow-$(VERSION)
 PKG_CPPFLAGS=-I../inst/include -I$(RWINLIB)/include/arrow
 
-PKG_LIBS=-L$(RWINLIB)/lib${R_ARCH} -larrow
+# TODO: fix path
+PKG_LIBS=-L$(RWINLIB)/lib-4.9.3${R_ARCH} -larrow
 
 all: clean winlibs
 
